@@ -1,22 +1,12 @@
-# Given two lists, A and B, which contain numbers in no particular order, find and print the following:
-
-# 1) The elements that can be found in both lists
-
-# 2) The elements only found in list B
-
-# Do not worry about duplicates within each list - we only want unique values. Do not use built-in intersection functions, i.e. intersection().
-
 from typing import List
 
 
 def find_elements_in_both_lists(a: List[int], b: List[int]) -> List[int]:
-    # write your code here
-    return []
+    return [element for element in a if element in b]
 
 
 def find_elements_in_second_list(a: List[int], b: List[int]) -> List[int]:
-    # write your code here
-    return []
+    return [element for element in b if element not in a]
 
 
 if __name__ == "__main__":
